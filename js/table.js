@@ -341,8 +341,8 @@ class Table {
 
             objtbody += '<tr><td>' + this.jSon[i].name + '</td><td>' + this.jSon[i].reference + '</td><td>' + this.jSon[i].weight + '</td><td>' + this.jSon[i].category + '</td><td>' + this.jSon[i].stock + '</td><td>' + this.jSon[i].date_create + '</td>' +
                 '<td><div class="btn-group" role="group" aria-label="Basic example">' +
-                '<button type="button" onclick="getDataEdit(' + "'" + this.jSon[i].obligation_cod + "' " + ');clearForm(' + "'form_customers'" + ', 0);"class="btn btn-primary"><i class="fas fa-pen-fancy"></i></button>' +
-                '<button type="button" onclick="getDelete(' + "'" + this.jSon[i].obligation_cod + "' " + ');clearForm(' + "'form_customers'" + ', 0);" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button></div></td></tr></td></tr>';
+                '<button type="button" onclick="getDataEdit(' + "'" + this.jSon[i].name + "' " + ');clearForm(' + "'form_customers'" + ', 0);"class="btn btn-primary"><i class="fas fa-pen-fancy"></i></button>' +
+                '<button type="button" onclick="getDelete(' + "'" + this.jSon[i].name + "' " + ');clearForm(' + "'form_customers'" + ', 0);" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button></div></td></tr></td></tr>';
         }
         objtbody += '</tbody>';
         objThead += '</thead>';

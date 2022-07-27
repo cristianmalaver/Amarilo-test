@@ -1,6 +1,5 @@
 //**Function add Obligation **/
-//Author: Cristoian malaver para konecta
-//Date: 1/6/2022
+//Author: Cristoian malaver para amarilo
 //Description : send data create obligation
 function setDataObligation(dataSetObligation) {
     try {
@@ -56,7 +55,8 @@ function getDataObligation(table, dataSetObligation, typeSend) {
                             tableObligation.createTableObligations();
                             //console.log(jsonObj);
                         } else if (typeSend == 0) {
-                            setDataForm(jsonObj);
+                            //console.log(jsonObj);
+                            //setDataForm(jsonObj);
                             viewModal('customerModal', 0);
                         } else if (typeSend == 3) {
                             tableAmortization = new TableAmortization(table, jsonObj,0);
@@ -114,10 +114,8 @@ function getDataObligation(table, dataSetObligation, typeSend) {
 }
 //**********************GED EDIT****************************//
 function getDataEdit(code) {
-    //getListBank("Bank_id");
-    getListTypeCredit("credit_type_id");
-    getListTypeInteres("interesting_type_id");
-    getListMethodAmortization("amortization_type_id");
+
+   // console.log(code);
     getDataObligation("", code, 0);
 
 }
@@ -125,7 +123,7 @@ function getDataEdit(code) {
 
 //**********************GED DELETE****************************//
 function getDelete(code) {
-    let r = confirm("Desea borrar el registro con CODIGO :  " + code);
+    let r = confirm("Desea borrar el registro con nombre :  " + code);
     if (r == true) {
         getDataObligation("", code, 5);
       }   

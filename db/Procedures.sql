@@ -364,8 +364,8 @@ DELIMITER $$
 DROP PROCEDURE IF EXISTS sp_obligation_select_update$$
 CREATE PROCEDURE sp_obligation_select_update(IN obligation_cod_	 VARCHAR(80) )
 BEGIN
-    SELECT obligation_id, client_idmax, client_name, client_contract, Bank_id, credit_type_id, interesting_type_id, amortization_type_id, desembolso_date, initial_value, cuotes_number, residual_number, dtf, dtf_points, ibr, ibr_points, fixed_rate, Stat_id, obligation_cod, pay_date, FORMAT(initial_value,2,'de_DE') AS 'initial_value_format', FORMAT(residual_number,2,'de_DE') AS 'residual_number_format', obligation_antigua, FORMAT(initial_value_initial,2,'de_DE') AS 'initial_value_format_initial',desembolso_date_initial,cuotes_number_initial FROM obligation 
-    WHERE obligation_cod=obligation_cod_ AND Stat_id=3; 
+    SELECT name,reference,price,weight,category,stock FROM create_product 
+    WHERE name=obligation_cod_; 
 END$$
 DELIMITER ;
 

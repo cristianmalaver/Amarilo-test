@@ -56,7 +56,7 @@ if (!isset($_SESSION['User'])) {
         <div class="container-fluid">
           <br>
           <!-- Page Heading -->
-          <h1 class="h3 mb-2 text-gray-800">Crear Productos</h1>
+          <h1 class="h3 mb-2 text-gray-800">Crear Personas</h1>
 
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
@@ -70,7 +70,7 @@ if (!isset($_SESSION['User'])) {
                 </li>
               </ul>
               <div class="text-center">
-                <h4 class="m-0 font-weight-bold text-primary">Productos Creados</h4>
+                <h4 class="m-0 font-weight-bold text-primary">Personas creadas</h4>
               </div>
             </div>
             <div class=" mx-auto col-md-6 align-self-center">
@@ -163,7 +163,7 @@ if (!isset($_SESSION['User'])) {
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="customerModalLabel">Obligación </h5>
+          <h5 class="modal-title" id="customerModalLabel">Crear usuarios amarilo </h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -257,12 +257,8 @@ if (!isset($_SESSION['User'])) {
               
                 <!-- ------------ antigua-->
                     <h6 for="credit_type_id">estado civil</h6>
-                    <select id="credit_type_id" class="custom-select custom-select-sm " placeholder="Ingresar valor " required>
-                      <option disabled selected value> -- Seleccione una opción -- </option>
-                      <option value="1">soltero</option>
-                      <option value="2">casado</option>
-                      <option value="3">N/A</option>
-                      </select>
+                    <<input type="text" id="credit_type_id" class="custom-select custom-select-sm " placeholder="Ingresar valor " required>
+                      
                     <div class="valid-feedback">Ok!</div>
                     <div class="invalid-feedback">Proporcione un valor válido.</div>
                   </div>
@@ -315,7 +311,6 @@ if (!isset($_SESSION['User'])) {
   <script src="../../js/moment.js"></script>
   <script src="../../js/selectList.js"></script>
   <script type="text/javascript" src="js/obligation.js"></script>
-  <script type="text/javascript" src="js/contract.js"></script>
   <script type="text/javascript" src="../../js/formatNumber.js"></script>
   <script>
     window.onload = loadView;

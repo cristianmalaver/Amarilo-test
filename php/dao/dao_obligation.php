@@ -308,9 +308,9 @@ class DaoObligation
       $con->query("SET NAMES 'utf8'");
       if ($con != null) {
 
-        $dataObligation = "WHERE obligation_cod ='".$objObligation->__getObligation_cod()."'";
+        $dataObligation = "WHERE name ='".$objObligation->__getObligation_cod()."'";
        // echo "UPDATE obligation SET Stat_id = 4 ".$dataObligation;
-        if ($con->query(  "DELETE FROM obligation " .$dataObligation)) 
+        if ($con->query(  "DELETE FROM create_product " .$dataObligation)) 
          
          { $this->intValidatio = 1;
         } else {
